@@ -1,0 +1,13 @@
+@import "global";
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-self: flex-start;
+}
+
+.map-container {
+  flex: 1;
+  height: 100vh;
+}

@@ -44,22 +44,6 @@ body {
   font-weight: 400;
 }
 
-.button {
-  align-items: center;
-  background-color: $background-color;
-  border: 2px solid $primary-color;
-  border-radius: 0.5rem;
-  color: $primary-color;
-  display: flex;
-  font-size: 1.15rem;
-  font-weight: 700;
-  justify-content: space-between;
-  letter-spacing: 2px;
-  padding: 0.5rem;
-  text-transform: uppercase;
-  width: 60%;
-}
-
 @media (max-width: 748px) {
   html,
   body {

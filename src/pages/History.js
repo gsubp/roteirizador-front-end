@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { FiX } from "react-icons/fi";
+import HistoryListItem from "../components/HistoryListItem"
 import "../styles/history.scss";
-import HistoryListItem from "../components/HistoryListItem";
 
 export default function History(props) {
     const [history, setHistory] = useState([{
@@ -22,7 +21,7 @@ export default function History(props) {
                     {
                         history.map((item, index) => {
                             <HistoryListItem
-                                key={item.id}
+                                key={index}
                                 origem={item.origem}
                                 destino={item.destino}
                                 distancia={item.distancia}

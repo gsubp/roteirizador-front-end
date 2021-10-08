@@ -3,14 +3,13 @@ import Map from "../components/Map";
 import UserDropdown from "../components/UserDropdown";
 import "../styles/home.scss";
 
-export default function Home() { 
-    
+export default function Home() {    
     return (
         <div className="container">
             <div className="map-container">
                 <Map/>
             </div>
-            <UserDropdown/>
+            <UserDropdown />
         </div>
     );
 

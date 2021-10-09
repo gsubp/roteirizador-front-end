@@ -11,22 +11,29 @@
   .register-content {
     background-color: $background-color;
     width: 40%;
-    height: 90%;
     padding: 1rem;
     border-radius: 1.25rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
     .register-header-content {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      width: 80%;
+      width: 100%;
     }
     h2 {
-      margin: 0 auto;
+      margin-left: 1rem;
+    }
+  }
+}
+
+@media (max-width: 748px) {
+  .register-container {
+    .register-content {
+      width: 90%;
     }
   }
 }

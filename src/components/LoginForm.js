@@ -35,7 +35,6 @@ export default function LoginForm() {
               const data = { email, senha };
               const response = await api.post("login", data);
               if (response.status === 200) {
-                alert("Logado com sucesso!");
                 localStorage.setItem("id", response.data.id);
                 history.push("/");
               }

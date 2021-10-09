@@ -39,3 +39,12 @@
     border-radius: 0.5rem;
   }
 }
+
+@media (max-width: 748px) {
+  .login-form {
+    width: 100%;
+    button {
+      width: 100%;
+    }
+  }
+}

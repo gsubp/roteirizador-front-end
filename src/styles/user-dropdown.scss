@@ -23,16 +23,16 @@
     > img {
       background-color: $background-color;
       width: 3rem;
-      padding: 0.25rem;
+      border: 4px solid $background-color;
       border-radius: 100%;
     }
     > p {
       text-align: center;
       user-select: none;
       margin-left: 0.35rem;
-      margin-right: 0.35rem;
-      color: $primary-color;
       letter-spacing: 2px;
+      font-weight: bold;
+      color: $secundary-color;
     }
   }
 
@@ -42,27 +42,53 @@
     flex-direction: column;
     background-color: $background-color;
     width: 12rem;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding: 1rem;
     border-radius: 0.75rem;
     margin-top: 0.35rem;
     box-shadow: 2px 2px 2px rgba(000, 000, 000, 0.35);
 
-    a {
+    a,
+    button {
+      background: transparent;
+      border: none;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
       color: $primary-color;
-      width: 100%;
+      font-size: 1rem;
+      font-weight: 400;
+      cursor: pointer;
+
+      span {
+        margin-left: 1rem;
+      }
     }
 
-    a + a {
-      margin-top: 4rem;
+    a + button {
+      margin-top: 2rem;
     }
+  }
+
+  .mobile-content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .user-dropdown-container:hover .user-dropdown-content {
   display: flex;
   transition: all ease-in 0.75s;
+}
+
+@media (max-width: 748px) {
+  .user-dropdown-container {
+    display: none;
+  }
 }

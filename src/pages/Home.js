@@ -1,5 +1,6 @@
 import React from "react";
 import Map from "../components/Map";
+import MenuMobile from "../components/MenuMobile";
 import UserDropdown from "../components/UserDropdown";
 import "../styles/home.scss";
 
@@ -10,6 +11,7 @@ export default function Home() {
                 <Map/>
             </div>
             <UserDropdown />
+            <MenuMobile/>
         </div>
     );
 

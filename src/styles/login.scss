@@ -49,3 +49,19 @@
     }
   }
 }
+
+@media (max-width: 748px) {
+  .login-container {
+    .login-content {
+      width: 90%;
+      .logo-content {
+        img {
+          width: 2.5rem;
+        }
+        p {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

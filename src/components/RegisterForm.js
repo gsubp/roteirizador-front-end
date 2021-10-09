@@ -1,8 +1,8 @@
 import { Formik } from "formik";
 import React from "react";
-import "../styles/form.scss";
+import { useHistory } from "react-router-dom";
 import api from "../services/api";
-import {useHistory} from "react-router-dom"
+import "../styles/form.scss";
 
 export default function RegisterForm() {
   const history = useHistory();
@@ -42,7 +42,7 @@ export default function RegisterForm() {
                 try {
                   const data = { nome, email, senha };
                   const response = await api.post("users", data);
-                  if (response.status == 200) {
+                  if (response.status === 200) {
                     alert("Cadastro Realizado com Sucesso!");
                     history.push("/login")
                     

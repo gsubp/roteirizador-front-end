@@ -11,12 +11,12 @@ export default function UserTouch() {
 
     useEffect(() => {
     });
-    useEffect(() => {        
+    useEffect(() => {                
         async function fetchUser() {
             const user = await api.get(`users/${localStorage.getItem("id")}`)
             setNone(user.data[0].nome);
         }
-        if (localStorage.getItem("id") === null)
+        if (!localStorage.getItem("id"))
             history.push("/login");
         else
             fetchUser();
